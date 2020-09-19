@@ -1,0 +1,44 @@
+version: '3'
+services:
+  selenoid:
+    network_mode: bridge
+    image: aerokube/selenoid:latest-release
+    container_name: "selenoid"
+    volumes:
+      - "$PWD:/etc/selenoid"
+      - "/var/run/docker.sock:/var/run/docker.sock"  
+    ports:
+      - "4444:4444"
+    command: ["-conf", "/etc/selenoid/browsers.json", "-limit", "10", "-listen", "0.0.0.0:4444"]
+  selenoid-ui:
+    network_mode: bridge
+    image: aerokube/selenoid-ui
+    container_name: "selenoid-ui"
+    ports:
+      - "8090:8090"
+    command: ["-selenoid-uri", "http://172.17.0.1:4444", "-listen", "0.0.0.0:8090"]
+  ggr:
+    network_mode: host
+    image: aerokube/ggr:latest-release
+    container_name: "ggr"
+    volumes:
+      - "$PWD:/etc/grid-router"
+    ports:
+      - "4545:4545"
+    command: ["-quotaDir", "/etc/grid-router/quota/", "-listen", "0.0.0.0:4545"]
+  ggr-ui:
+    network_mode: host
+    image: aerokube/ggr-ui:latest-release
+    container_name: "selenium-grid-ggr-ui"
+    volumes:
+      - ${PWD}/quota/:/etc/grid-router/quota
+    ports:
+      - "8888:8888"
+    command: ["-quota-dir", "/etc/grid-router/quota/", "--listen", "0.0.0.0:8888"]
+  selenoid-ui-ggr-ui:
+    network_mode: host
+    image: aerokube/selenoid-ui
+    container_name: "selenium-grid-selenoid-ui"
+    ports:
+      - "8100:8100"
+    command: ["-status-uri", "http://localhost:8888", "-webdriver-uri", "http://localhost:4545", "-listen", "0.0.0.0:8100"]

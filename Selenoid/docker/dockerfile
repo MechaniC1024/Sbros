@@ -1,0 +1,5 @@
+FROM maven:3.6.3-jdk-11
+RUN apt-get update
+ADD https://github.com/MechaniC1024/PrestaShop /usr/src
+WORKDIR /usr/src/PrestaShop/
+VOLUME [ "/usr/src/PrestaShop/target/allure-report" ]

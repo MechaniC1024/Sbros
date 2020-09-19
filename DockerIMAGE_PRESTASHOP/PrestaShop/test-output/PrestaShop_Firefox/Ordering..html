@@ -1,0 +1,269 @@
+<html>
+<head>
+<title>TestNG:  Ordering.</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Ordering.</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>10/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon May 11 23:56:04 MSK 2020</td>
+</tr>
+<tr><td>Total time:</td><td>36 seconds (36276 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.PrestaShop.test2.AddNewCategory.addNewCategory()'><b>addNewCategory</b><br>Test class: com.PrestaShop.test2.AddNewCategory<br>Test method: Добавление новой категории.</td>
+<td></td>
+<td>7</td>
+<td>com.PrestaShop.test2.AddNewCategory@4f89331f</td></tr>
+<tr>
+<td title='com.PrestaShop.test4.Ordering.addingProductToCart()'><b>addingProductToCart</b><br>Test class: com.PrestaShop.test4.Ordering<br>Test method: Добавление товара в корзину.</td>
+<td></td>
+<td>1</td>
+<td>com.PrestaShop.test4.Ordering@6cf0a747</td></tr>
+<tr>
+<td title='com.PrestaShop.test2.AddNewCategory.categorySection()'><b>categorySection</b><br>Test class: com.PrestaShop.test2.AddNewCategory<br>Test method: Переход в раздел категории товаров.</td>
+<td></td>
+<td>1</td>
+<td>com.PrestaShop.test2.AddNewCategory@4f89331f</td></tr>
+<tr>
+<td title='com.PrestaShop.test3.CreatingANewProduct.checkNewProduct()'><b>checkNewProduct</b><br>Test class: com.PrestaShop.test3.CreatingANewProduct<br>Test method: Проверка созданного товара.</td>
+<td></td>
+<td>11</td>
+<td>com.PrestaShop.test3.CreatingANewProduct@2938127d</td></tr>
+<tr>
+<td title='com.PrestaShop.test1.Titles.checkTitleAdvancedParameters()'><b>checkTitleAdvancedParameters</b><br>Test class: com.PrestaShop.test1.Titles<br>Test method: Проверка титула страницы на вкладке "Конфигурация" после обновления страницы.</td>
+<td></td>
+<td>18</td>
+<td>com.PrestaShop.test1.Titles@715b886f</td></tr>
+<tr>
+<td title='com.PrestaShop.test1.Titles.checkTitleCatalog()'><b>checkTitleCatalog</b><br>Test class: com.PrestaShop.test1.Titles<br>Test method: Проверка титула страницы на вкладке "Каталог" после обновления страницы.</td>
+<td></td>
+<td>5</td>
+<td>com.PrestaShop.test1.Titles@715b886f</td></tr>
+<tr>
+<td title='com.PrestaShop.test1.Titles.checkTitleCustomer()'><b>checkTitleCustomer</b><br>Test class: com.PrestaShop.test1.Titles<br>Test method: Проверка титула страницы на вкладке "Клиенты" после обновления страницы.</td>
+<td></td>
+<td>3</td>
+<td>com.PrestaShop.test1.Titles@715b886f</td></tr>
+<tr>
+<td title='com.PrestaShop.test1.Titles.checkTitleCustomerService()'><b>checkTitleCustomerService</b><br>Test class: com.PrestaShop.test1.Titles<br>Test method: Проверка титула страницы на вкладке "Служба поддержки" после обновления страницы.</td>
+<td></td>
+<td>3</td>
+<td>com.PrestaShop.test1.Titles@715b886f</td></tr>
+<tr>
+<td title='com.PrestaShop.test1.Titles.checkTitleDashboard()'><b>checkTitleDashboard</b><br>Test class: com.PrestaShop.test1.Titles<br>Test method: Проверка титула страницы на вкладке "Dashboard" после обновления страницы.</td>
+<td></td>
+<td>4</td>
+<td>com.PrestaShop.test1.Titles@715b886f</td></tr>
+<tr>
+<td title='com.PrestaShop.test1.Titles.checkTitleDelivery()'><b>checkTitleDelivery</b><br>Test class: com.PrestaShop.test1.Titles<br>Test method: Проверка титула страницы на вкладке "Delivery" после обновления страницы.</td>
+<td></td>
+<td>5</td>
+<td>com.PrestaShop.test1.Titles@715b886f</td></tr>
+<tr>
+<td title='com.PrestaShop.test1.Titles.checkTitleDesign()'><b>checkTitleDesign</b><br>Test class: com.PrestaShop.test1.Titles<br>Test method: Проверка титула страницы на вкладке "Design" после обновления страницы.</td>
+<td></td>
+<td>4</td>
+<td>com.PrestaShop.test1.Titles@715b886f</td></tr>
+<tr>
+<td title='com.PrestaShop.test1.Titles.checkTitleInternational()'><b>checkTitleInternational</b><br>Test class: com.PrestaShop.test1.Titles<br>Test method: Проверка титула страницы на вкладке "International" после обновления страницы.</td>
+<td></td>
+<td>5</td>
+<td>com.PrestaShop.test1.Titles@715b886f</td></tr>
+<tr>
+<td title='com.PrestaShop.test1.Titles.checkTitleModules()'><b>checkTitleModules</b><br>Test class: com.PrestaShop.test1.Titles<br>Test method: Проверка титула страницы на вкладке "Modules" после обновления страницы.</td>
+<td></td>
+<td>7</td>
+<td>com.PrestaShop.test1.Titles@715b886f</td></tr>
+<tr>
+<td title='com.PrestaShop.test1.Titles.checkTitleOrder()'><b>checkTitleOrder</b><br>Test class: com.PrestaShop.test1.Titles<br>Test method: Проверка титула страницы на вкладке "Заказы" после обновления страницы.</td>
+<td></td>
+<td>3</td>
+<td>com.PrestaShop.test1.Titles@715b886f</td></tr>
+<tr>
+<td title='com.PrestaShop.test1.Titles.checkTitlePayment()'><b>checkTitlePayment</b><br>Test class: com.PrestaShop.test1.Titles<br>Test method: Проверка титула страницы на вкладке "Способ оплаты" после обновления страницы.</td>
+<td></td>
+<td>4</td>
+<td>com.PrestaShop.test1.Titles@715b886f</td></tr>
+<tr>
+<td title='com.PrestaShop.test1.Titles.checkTitleShopParameters()'><b>checkTitleShopParameters</b><br>Test class: com.PrestaShop.test1.Titles<br>Test method: Проверка титула страницы на вкладке "Shop Parameters" после обновления страницы.</td>
+<td></td>
+<td>4</td>
+<td>com.PrestaShop.test1.Titles@715b886f</td></tr>
+<tr>
+<td title='com.PrestaShop.test1.Titles.checkTitleStatistics()'><b>checkTitleStatistics</b><br>Test class: com.PrestaShop.test1.Titles<br>Test method: Проверка титула страницы на вкладке "Статистика" после обновления страницы.</td>
+<td></td>
+<td>3</td>
+<td>com.PrestaShop.test1.Titles@715b886f</td></tr>
+<tr>
+<td title='com.PrestaShop.test2.AddNewCategory.checkingNewCategory()'><b>checkingNewCategory</b><br>Test class: com.PrestaShop.test2.AddNewCategory<br>Test method: Проверка созданной категории.</td>
+<td></td>
+<td>1</td>
+<td>com.PrestaShop.test2.AddNewCategory@4f89331f</td></tr>
+<tr>
+<td title='com.PrestaShop.test4.Ordering.checkingPropertiesOrder()'><b>checkingPropertiesOrder</b><br>Test class: com.PrestaShop.test4.Ordering<br>Test method: Проверка свойств товара в заказе.</td>
+<td></td>
+<td>0</td>
+<td>com.PrestaShop.test4.Ordering@6cf0a747</td></tr>
+<tr>
+<td title='com.PrestaShop.test4.Ordering.checkingPropertiesProduct()'><b>checkingPropertiesProduct</b><br>Test class: com.PrestaShop.test4.Ordering<br>Test method: Проверка свойств продукта.</td>
+<td></td>
+<td>0</td>
+<td>com.PrestaShop.test4.Ordering@6cf0a747</td></tr>
+<tr>
+<td title='com.PrestaShop.test4.Ordering.checkingQuantityProduct()'><b>checkingQuantityProduct</b><br>Test class: com.PrestaShop.test4.Ordering<br>Test method: Проверка количества товара после заказа.</td>
+<td></td>
+<td>2</td>
+<td>com.PrestaShop.test4.Ordering@6cf0a747</td></tr>
+<tr>
+<td title='com.PrestaShop.test4.Ordering.choiceOfRandomGoods()'><b>choiceOfRandomGoods</b><br>Test class: com.PrestaShop.test4.Ordering<br>Test method: Выбор случайного товара.</td>
+<td></td>
+<td>23</td>
+<td>com.PrestaShop.test4.Ordering@6cf0a747</td></tr>
+<tr>
+<td title='com.PrestaShop.test4.Ordering.deliveryMethod()'><b>deliveryMethod</b><br>Test class: com.PrestaShop.test4.Ordering<br>Test method: Доставка товара.</td>
+<td></td>
+<td>1</td>
+<td>com.PrestaShop.test4.Ordering@6cf0a747</td></tr>
+<tr>
+<td title='com.PrestaShop.test4.Ordering.inputCustomerData()'><b>inputCustomerData</b><br>Test class: com.PrestaShop.test4.Ordering<br>Test method: Ввод личных данных заказчика.<br>Parameters: Dmitry, Tarasov, DmitryTarasov@gmail.com</td>
+<td></td>
+<td>1</td>
+<td>com.PrestaShop.test4.Ordering@6cf0a747</td></tr>
+<tr>
+<td title='com.PrestaShop.test4.Ordering.inputDeliveryAddressData()'><b>inputDeliveryAddressData</b><br>Test class: com.PrestaShop.test4.Ordering<br>Test method: Ввод адресса доставки товара.<br>Parameters: Tatarskaya 38, 04107, Kyiv</td>
+<td></td>
+<td>2</td>
+<td>com.PrestaShop.test4.Ordering@6cf0a747</td></tr>
+<tr>
+<td title='com.PrestaShop.test1.Titles.logOut()'><b>logOut</b><br>Test class: com.PrestaShop.test1.Titles<br>Test method: Выход с аккаунта.</td>
+<td></td>
+<td>2</td>
+<td>com.PrestaShop.test1.Titles@715b886f</td></tr>
+<tr>
+<td title='com.PrestaShop.test2.AddNewCategory.logOut()'><b>logOut</b><br>Test class: com.PrestaShop.test2.AddNewCategory<br>Test method: Выход с аккаунта.</td>
+<td></td>
+<td>1</td>
+<td>com.PrestaShop.test2.AddNewCategory@4f89331f</td></tr>
+<tr>
+<td title='com.PrestaShop.test3.CreatingANewProduct.logOut()'><b>logOut</b><br>Test class: com.PrestaShop.test3.CreatingANewProduct<br>Test method: Выход из админ панели сайта.</td>
+<td></td>
+<td>21</td>
+<td>com.PrestaShop.test3.CreatingANewProduct@2938127d</td></tr>
+<tr>
+<td title='com.PrestaShop.test1.LoginAndLogout.login()'><b>login</b><br>Test class: com.PrestaShop.test1.LoginAndLogout<br>Test method: Вход в админ панель сайта.<br>Parameters: webinar.test@gmail.com, Xcg7299bnSmMuRLp9ITw</td>
+<td></td>
+<td>5</td>
+<td>com.PrestaShop.test1.LoginAndLogout@5af8bb51</td></tr>
+<tr>
+<td title='com.PrestaShop.test1.LoginAndLogout.logout()'><b>logout</b><br>Test class: com.PrestaShop.test1.LoginAndLogout<br>Test method: Выход из админ панели сайта.</td>
+<td></td>
+<td>3</td>
+<td>com.PrestaShop.test1.LoginAndLogout@5af8bb51</td></tr>
+<tr>
+<td title='com.PrestaShop.test3.CreatingANewProduct.newProduct()'><b>newProduct</b><br>Test class: com.PrestaShop.test3.CreatingANewProduct<br>Test method: Создание нового товара.</td>
+<td></td>
+<td>9</td>
+<td>com.PrestaShop.test3.CreatingANewProduct@2938127d</td></tr>
+<tr>
+<td title='com.PrestaShop.test4.Ordering.paymentMethod()'><b>paymentMethod</b><br>Test class: com.PrestaShop.test4.Ordering<br>Test method: Оплата товара.</td>
+<td></td>
+<td>2</td>
+<td>com.PrestaShop.test4.Ordering@6cf0a747</td></tr>
+<tr>
+<td title='com.PrestaShop.test3.CreatingANewProduct.productActivation()'><b>productActivation</b><br>Test class: com.PrestaShop.test3.CreatingANewProduct<br>Test method: Сохранение и активация нового товара.</td>
+<td></td>
+<td>3</td>
+<td>com.PrestaShop.test3.CreatingANewProduct@2938127d</td></tr>
+<tr>
+<td title='com.PrestaShop.test4.Ordering.productProperties()'><b>productProperties</b><br>Test class: com.PrestaShop.test4.Ordering<br>Test method: Взятие свойств товара.</td>
+<td></td>
+<td>0</td>
+<td>com.PrestaShop.test4.Ordering@6cf0a747</td></tr>
+<tr>
+<td title='com.PrestaShop.test3.CreatingANewProduct.productSection()'><b>productSection</b><br>Test class: com.PrestaShop.test3.CreatingANewProduct<br>Test method: Переход в раздел товаров.</td>
+<td></td>
+<td>3</td>
+<td>com.PrestaShop.test3.CreatingANewProduct@2938127d</td></tr>
+<tr>
+<td title='com.PrestaShop.test1.Titles.signIn()'><b>signIn</b><br>Test class: com.PrestaShop.test1.Titles<br>Test method: Вход в админ панель.<br>Parameters: webinar.test@gmail.com, Xcg7299bnSmMuRLp9ITw</td>
+<td></td>
+<td>2</td>
+<td>com.PrestaShop.test1.Titles@715b886f</td></tr>
+<tr>
+<td title='com.PrestaShop.test2.AddNewCategory.signIn()'><b>signIn</b><br>Test class: com.PrestaShop.test2.AddNewCategory<br>Test method: Вход в админ панель.<br>Parameters: webinar.test@gmail.com, Xcg7299bnSmMuRLp9ITw</td>
+<td></td>
+<td>5</td>
+<td>com.PrestaShop.test2.AddNewCategory@4f89331f</td></tr>
+<tr>
+<td title='com.PrestaShop.test3.CreatingANewProduct.signIn()'><b>signIn</b><br>Test class: com.PrestaShop.test3.CreatingANewProduct<br>Test method: Вход в админ панель сайта.<br>Parameters: webinar.test@gmail.com, Xcg7299bnSmMuRLp9ITw</td>
+<td></td>
+<td>2</td>
+<td>com.PrestaShop.test3.CreatingANewProduct@2938127d</td></tr>
+</table><p>
+</body>
+</html>

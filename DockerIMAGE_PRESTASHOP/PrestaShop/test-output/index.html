@@ -1,0 +1,1242 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-PrestaShop_Firefox" class="navigator-link">
+              <span class="suite-name border-passed">PrestaShop_Firefox</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-PrestaShop_Firefox" class="navigator-link ">
+                    <span>E:\New_Eclipse\Project_Bogdan\PrestaShop\XML_RUN\Run_all_test_Firefox.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-PrestaShop_Firefox" class="navigator-link ">
+                    <span class="test-stats">5 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-PrestaShop_Firefox" class="navigator-link ">
+                    <span>1 group</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-PrestaShop_Firefox" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-PrestaShop_Firefox" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-PrestaShop_Firefox" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-PrestaShop_Firefox" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">38 methods,   38 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-PrestaShop_Firefox" class="hide-methods passed suite-PrestaShop_Firefox"> (hide)</a> <!-- hide-methods passed suite-PrestaShop_Firefox -->
+                      <a href="#" panel-name="suite-PrestaShop_Firefox" class="show-methods passed suite-PrestaShop_Firefox"> (show)</a> <!-- show-methods passed suite-PrestaShop_Firefox -->
+                    </span>
+                    <div class="method-list-content passed suite-PrestaShop_Firefox">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-PrestaShop_Firefox" title="com.PrestaShop.test2.AddNewCategory" class="method navigator-link" hash-for-method="addNewCategory">addNewCategory</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-PrestaShop_Firefox" title="com.PrestaShop.test4.Ordering" class="method navigator-link" hash-for-method="addingProductToCart">addingProductToCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-PrestaShop_Firefox" title="com.PrestaShop.test2.AddNewCategory" class="method navigator-link" hash-for-method="categorySection">categorySection</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-PrestaShop_Firefox" title="com.PrestaShop.test3.CreatingANewProduct" class="method navigator-link" hash-for-method="checkNewProduct">checkNewProduct</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-PrestaShop_Firefox" title="com.PrestaShop.test1.Titles" class="method navigator-link" hash-for-method="checkTitleAdvancedParameters">checkTitleAdvancedParameters</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-PrestaShop_Firefox" title="com.PrestaShop.test1.Titles" class="method navigator-link" hash-for-method="checkTitleCatalog">checkTitleCatalog</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-PrestaShop_Firefox" title="com.PrestaShop.test1.Titles" class="method navigator-link" hash-for-method="checkTitleCustomer">checkTitleCustomer</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-PrestaShop_Firefox" title="com.PrestaShop.test1.Titles" class="method navigator-link" hash-for-method="checkTitleCustomerService">checkTitleCustomerService</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-PrestaShop_Firefox" title="com.PrestaShop.test1.Titles" class="method navigator-link" hash-for-method="checkTitleDashboard">checkTitleDashboard</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-PrestaShop_Firefox" title="com.PrestaShop.test1.Titles" class="method navigator-link" hash-for-method="checkTitleDelivery">checkTitleDelivery</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-PrestaShop_Firefox" title="com.PrestaShop.test1.Titles" class="method navigator-link" hash-for-method="checkTitleDesign">checkTitleDesign</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-PrestaShop_Firefox" title="com.PrestaShop.test1.Titles" class="method navigator-link" hash-for-method="checkTitleInternational">checkTitleInternational</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-PrestaShop_Firefox" title="com.PrestaShop.test1.Titles" class="method navigator-link" hash-for-method="checkTitleModules">checkTitleModules</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-PrestaShop_Firefox" title="com.PrestaShop.test1.Titles" class="method navigator-link" hash-for-method="checkTitleOrder">checkTitleOrder</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-PrestaShop_Firefox" title="com.PrestaShop.test1.Titles" class="method navigator-link" hash-for-method="checkTitlePayment">checkTitlePayment</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-PrestaShop_Firefox" title="com.PrestaShop.test1.Titles" class="method navigator-link" hash-for-method="checkTitleShopParameters">checkTitleShopParameters</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-PrestaShop_Firefox" title="com.PrestaShop.test1.Titles" class="method navigator-link" hash-for-method="checkTitleStatistics">checkTitleStatistics</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-PrestaShop_Firefox" title="com.PrestaShop.test2.AddNewCategory" class="method navigator-link" hash-for-method="checkingNewCategory">checkingNewCategory</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-PrestaShop_Firefox" title="com.PrestaShop.test4.Ordering" class="method navigator-link" hash-for-method="checkingPropertiesOrder">checkingPropertiesOrder</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-PrestaShop_Firefox" title="com.PrestaShop.test4.Ordering" class="method navigator-link" hash-for-method="checkingPropertiesProduct">checkingPropertiesProduct</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-PrestaShop_Firefox" title="com.PrestaShop.test4.Ordering" class="method navigator-link" hash-for-method="checkingQuantityProduct">checkingQuantityProduct</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-PrestaShop_Firefox" title="com.PrestaShop.test4.Ordering" class="method navigator-link" hash-for-method="choiceOfRandomGoods">choiceOfRandomGoods</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-PrestaShop_Firefox" title="com.PrestaShop.test4.Ordering" class="method navigator-link" hash-for-method="deliveryMethod">deliveryMethod</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-PrestaShop_Firefox" title="com.PrestaShop.test4.Ordering" class="method navigator-link" hash-for-method="inputCustomerData(Dmitry, Tarasov, DmitryTarasov@gmail.com)">inputCustomerData(Dmitry, Tarasov, DmitryTarasov@gmail.com)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-PrestaShop_Firefox" title="com.PrestaShop.test4.Ordering" class="method navigator-link" hash-for-method="inputDeliveryAddressData(Tatarskaya 38, 04107, Kyiv)">inputDeliveryAddressData(Tatarskaya 38, 04107, Kyiv)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-PrestaShop_Firefox" title="com.PrestaShop.test1.Titles" class="method navigator-link" hash-for-method="logOut">logOut</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-PrestaShop_Firefox" title="com.PrestaShop.test2.AddNewCategory" class="method navigator-link" hash-for-method="logOut">logOut</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-PrestaShop_Firefox" title="com.PrestaShop.test3.CreatingANewProduct" class="method navigator-link" hash-for-method="logOut">logOut</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-PrestaShop_Firefox" title="com.PrestaShop.test1.LoginAndLogout" class="method navigator-link" hash-for-method="login(webinar.test@gmail.com, Xcg7299bnSmMuRLp9ITw)">login(webinar.test@gmail.com, Xcg7299bnSmMuRLp9ITw)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-PrestaShop_Firefox" title="com.PrestaShop.test1.LoginAndLogout" class="method navigator-link" hash-for-method="logout">logout</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-PrestaShop_Firefox" title="com.PrestaShop.test3.CreatingANewProduct" class="method navigator-link" hash-for-method="newProduct">newProduct</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-PrestaShop_Firefox" title="com.PrestaShop.test4.Ordering" class="method navigator-link" hash-for-method="paymentMethod">paymentMethod</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-PrestaShop_Firefox" title="com.PrestaShop.test3.CreatingANewProduct" class="method navigator-link" hash-for-method="productActivation">productActivation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-PrestaShop_Firefox" title="com.PrestaShop.test4.Ordering" class="method navigator-link" hash-for-method="productProperties">productProperties</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-PrestaShop_Firefox" title="com.PrestaShop.test3.CreatingANewProduct" class="method navigator-link" hash-for-method="productSection">productSection</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-PrestaShop_Firefox" title="com.PrestaShop.test1.Titles" class="method navigator-link" hash-for-method="signIn(webinar.test@gmail.com, Xcg7299bnSmMuRLp9ITw)">signIn(webinar.test@gmail.com, Xcg7299bnSmMuRLp9ITw)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-PrestaShop_Firefox" title="com.PrestaShop.test2.AddNewCategory" class="method navigator-link" hash-for-method="signIn(webinar.test@gmail.com, Xcg7299bnSmMuRLp9ITw)">signIn(webinar.test@gmail.com, Xcg7299bnSmMuRLp9ITw)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-PrestaShop_Firefox" title="com.PrestaShop.test3.CreatingANewProduct" class="method navigator-link" hash-for-method="signIn(webinar.test@gmail.com, Xcg7299bnSmMuRLp9ITw)">signIn(webinar.test@gmail.com, Xcg7299bnSmMuRLp9ITw)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-PrestaShop_Firefox -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-PrestaShop_Firefox" class="panel PrestaShop_Firefox">
+          <div class="suite-PrestaShop_Firefox-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.PrestaShop.test1.Titles</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkTitleAdvancedParameters">
+                  </a> <!-- checkTitleAdvancedParameters -->
+                  <span class="method-name">checkTitleAdvancedParameters</span>
+                  <em>
+(Проверка титула страницы на вкладке "Конфигурация" после обновления страницы.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkTitleCatalog">
+                  </a> <!-- checkTitleCatalog -->
+                  <span class="method-name">checkTitleCatalog</span>
+                  <em>
+(Проверка титула страницы на вкладке "Каталог" после обновления страницы.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkTitleCustomer">
+                  </a> <!-- checkTitleCustomer -->
+                  <span class="method-name">checkTitleCustomer</span>
+                  <em>
+(Проверка титула страницы на вкладке "Клиенты" после обновления страницы.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkTitleCustomerService">
+                  </a> <!-- checkTitleCustomerService -->
+                  <span class="method-name">checkTitleCustomerService</span>
+                  <em>
+(Проверка титула страницы на вкладке "Служба поддержки" после обновления страницы.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkTitleDashboard">
+                  </a> <!-- checkTitleDashboard -->
+                  <span class="method-name">checkTitleDashboard</span>
+                  <em>
+(Проверка титула страницы на вкладке "Dashboard" после обновления страницы.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkTitleDelivery">
+                  </a> <!-- checkTitleDelivery -->
+                  <span class="method-name">checkTitleDelivery</span>
+                  <em>
+(Проверка титула страницы на вкладке "Delivery" после обновления страницы.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkTitleDesign">
+                  </a> <!-- checkTitleDesign -->
+                  <span class="method-name">checkTitleDesign</span>
+                  <em>
+(Проверка титула страницы на вкладке "Design" после обновления страницы.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkTitleInternational">
+                  </a> <!-- checkTitleInternational -->
+                  <span class="method-name">checkTitleInternational</span>
+                  <em>
+(Проверка титула страницы на вкладке "International" после обновления страницы.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkTitleModules">
+                  </a> <!-- checkTitleModules -->
+                  <span class="method-name">checkTitleModules</span>
+                  <em>
+(Проверка титула страницы на вкладке "Modules" после обновления страницы.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkTitleOrder">
+                  </a> <!-- checkTitleOrder -->
+                  <span class="method-name">checkTitleOrder</span>
+                  <em>
+(Проверка титула страницы на вкладке "Заказы" после обновления страницы.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkTitlePayment">
+                  </a> <!-- checkTitlePayment -->
+                  <span class="method-name">checkTitlePayment</span>
+                  <em>
+(Проверка титула страницы на вкладке "Способ оплаты" после обновления страницы.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkTitleShopParameters">
+                  </a> <!-- checkTitleShopParameters -->
+                  <span class="method-name">checkTitleShopParameters</span>
+                  <em>
+(Проверка титула страницы на вкладке "Shop Parameters" после обновления страницы.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkTitleStatistics">
+                  </a> <!-- checkTitleStatistics -->
+                  <span class="method-name">checkTitleStatistics</span>
+                  <em>
+(Проверка титула страницы на вкладке "Статистика" после обновления страницы.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="logOut">
+                  </a> <!-- logOut -->
+                  <span class="method-name">logOut</span>
+                  <em>
+(Выход с аккаунта.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="signIn(webinar.test@gmail.com, Xcg7299bnSmMuRLp9ITw)">
+                  </a> <!-- signIn(webinar.test@gmail.com, Xcg7299bnSmMuRLp9ITw) -->
+                  <span class="method-name">signIn</span>
+                  <span class="parameters">(webinar.test@gmail.com, Xcg7299bnSmMuRLp9ITw)</span>
+                  <em>
+(Вход в админ панель.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-PrestaShop_Firefox-class-passed -->
+          <div class="suite-PrestaShop_Firefox-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.PrestaShop.test2.AddNewCategory</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addNewCategory">
+                  </a> <!-- addNewCategory -->
+                  <span class="method-name">addNewCategory</span>
+                  <em>
+(Добавление новой категории.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="categorySection">
+                  </a> <!-- categorySection -->
+                  <span class="method-name">categorySection</span>
+                  <em>
+(Переход в раздел категории товаров.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkingNewCategory">
+                  </a> <!-- checkingNewCategory -->
+                  <span class="method-name">checkingNewCategory</span>
+                  <em>
+(Проверка созданной категории.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="logOut">
+                  </a> <!-- logOut -->
+                  <span class="method-name">logOut</span>
+                  <em>
+(Выход с аккаунта.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="signIn(webinar.test@gmail.com, Xcg7299bnSmMuRLp9ITw)">
+                  </a> <!-- signIn(webinar.test@gmail.com, Xcg7299bnSmMuRLp9ITw) -->
+                  <span class="method-name">signIn</span>
+                  <span class="parameters">(webinar.test@gmail.com, Xcg7299bnSmMuRLp9ITw)</span>
+                  <em>
+(Вход в админ панель.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-PrestaShop_Firefox-class-passed -->
+          <div class="suite-PrestaShop_Firefox-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.PrestaShop.test3.CreatingANewProduct</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkNewProduct">
+                  </a> <!-- checkNewProduct -->
+                  <span class="method-name">checkNewProduct</span>
+                  <em>
+(Проверка созданного товара.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="logOut">
+                  </a> <!-- logOut -->
+                  <span class="method-name">logOut</span>
+                  <em>
+(Выход из админ панели сайта.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="newProduct">
+                  </a> <!-- newProduct -->
+                  <span class="method-name">newProduct</span>
+                  <em>
+(Создание нового товара.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="productActivation">
+                  </a> <!-- productActivation -->
+                  <span class="method-name">productActivation</span>
+                  <em>
+(Сохранение и активация нового товара.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="productSection">
+                  </a> <!-- productSection -->
+                  <span class="method-name">productSection</span>
+                  <em>
+(Переход в раздел товаров.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="signIn(webinar.test@gmail.com, Xcg7299bnSmMuRLp9ITw)">
+                  </a> <!-- signIn(webinar.test@gmail.com, Xcg7299bnSmMuRLp9ITw) -->
+                  <span class="method-name">signIn</span>
+                  <span class="parameters">(webinar.test@gmail.com, Xcg7299bnSmMuRLp9ITw)</span>
+                  <em>
+(Вход в админ панель сайта.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-PrestaShop_Firefox-class-passed -->
+          <div class="suite-PrestaShop_Firefox-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.PrestaShop.test4.Ordering</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addingProductToCart">
+                  </a> <!-- addingProductToCart -->
+                  <span class="method-name">addingProductToCart</span>
+                  <em>
+(Добавление товара в корзину.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkingPropertiesOrder">
+                  </a> <!-- checkingPropertiesOrder -->
+                  <span class="method-name">checkingPropertiesOrder</span>
+                  <em>
+(Проверка свойств товара в заказе.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkingPropertiesProduct">
+                  </a> <!-- checkingPropertiesProduct -->
+                  <span class="method-name">checkingPropertiesProduct</span>
+                  <em>
+(Проверка свойств продукта.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkingQuantityProduct">
+                  </a> <!-- checkingQuantityProduct -->
+                  <span class="method-name">checkingQuantityProduct</span>
+                  <em>
+(Проверка количества товара после заказа.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="choiceOfRandomGoods">
+                  </a> <!-- choiceOfRandomGoods -->
+                  <span class="method-name">choiceOfRandomGoods</span>
+                  <em>
+(Выбор случайного товара.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deliveryMethod">
+                  </a> <!-- deliveryMethod -->
+                  <span class="method-name">deliveryMethod</span>
+                  <em>
+(Доставка товара.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="inputCustomerData(Dmitry, Tarasov, DmitryTarasov@gmail.com)">
+                  </a> <!-- inputCustomerData(Dmitry, Tarasov, DmitryTarasov@gmail.com) -->
+                  <span class="method-name">inputCustomerData</span>
+                  <span class="parameters">(Dmitry, Tarasov, DmitryTarasov@gmail.com)</span>
+                  <em>
+(Ввод личных данных заказчика.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="inputDeliveryAddressData(Tatarskaya 38, 04107, Kyiv)">
+                  </a> <!-- inputDeliveryAddressData(Tatarskaya 38, 04107, Kyiv) -->
+                  <span class="method-name">inputDeliveryAddressData</span>
+                  <span class="parameters">(Tatarskaya 38, 04107, Kyiv)</span>
+                  <em>
+(Ввод адресса доставки товара.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="paymentMethod">
+                  </a> <!-- paymentMethod -->
+                  <span class="method-name">paymentMethod</span>
+                  <em>
+(Оплата товара.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="productProperties">
+                  </a> <!-- productProperties -->
+                  <span class="method-name">productProperties</span>
+                  <em>
+(Взятие свойств товара.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-PrestaShop_Firefox-class-passed -->
+          <div class="suite-PrestaShop_Firefox-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.PrestaShop.test1.LoginAndLogout</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="login(webinar.test@gmail.com, Xcg7299bnSmMuRLp9ITw)">
+                  </a> <!-- login(webinar.test@gmail.com, Xcg7299bnSmMuRLp9ITw) -->
+                  <span class="method-name">login</span>
+                  <span class="parameters">(webinar.test@gmail.com, Xcg7299bnSmMuRLp9ITw)</span>
+                  <em>
+(Вход в админ панель сайта.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="logout">
+                  </a> <!-- logout -->
+                  <span class="method-name">logout</span>
+                  <em>
+(Выход из админ панели сайта.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-PrestaShop_Firefox-class-passed -->
+        </div> <!-- panel PrestaShop_Firefox -->
+        <div panel-name="test-xml-PrestaShop_Firefox" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">E:\New_Eclipse\Project_Bogdan\PrestaShop\XML_RUN\Run_all_test_Firefox.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;1&quot; parallel=&quot;tests&quot; name=&quot;PrestaShop_Firefox&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;parameter name=&quot;browser&quot; value=&quot;Firefox&quot;/&gt;
+  &lt;parameter name=&quot;threadCount&quot; value=&quot;1&quot;/&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.PrestaShop.Listeners.TestFailedScreenshotListener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;1&quot; parallel=&quot;tests&quot; name=&quot;Check login and logout.&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.PrestaShop.test1.LoginAndLogout&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Check login and logout. --&gt;
+  &lt;test thread-count=&quot;1&quot; parallel=&quot;tests&quot; name=&quot;Check titles.&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.PrestaShop.test1.Titles&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Check titles. --&gt;
+  &lt;test thread-count=&quot;1&quot; parallel=&quot;tests&quot; name=&quot;Сheck the addition of a new category.&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.PrestaShop.test2.AddNewCategory&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Сheck the addition of a new category. --&gt;
+  &lt;test thread-count=&quot;1&quot; parallel=&quot;tests&quot; name=&quot;Adding and checking a new product.&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.PrestaShop.test3.CreatingANewProduct&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Adding and checking a new product. --&gt;
+  &lt;test thread-count=&quot;1&quot; parallel=&quot;tests&quot; name=&quot;Ordering.&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.PrestaShop.test4.Ordering&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Ordering. --&gt;
+&lt;/suite&gt; &lt;!-- PrestaShop_Firefox --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-PrestaShop_Firefox" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for PrestaShop_Firefox</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Check login and logout. (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Check titles. (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Сheck the addition of a new category. (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Adding and checking a new product. (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Ordering. (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-PrestaShop_Firefox" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for PrestaShop_Firefox</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">title</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">checkTitleAdvancedParameters</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">checkTitleCatalog</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">checkTitleCustomer</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">checkTitleCustomerService</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">checkTitleDashboard</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">checkTitleDelivery</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">checkTitleDesign</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">checkTitleInternational</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">checkTitleModules</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">checkTitleOrder</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">checkTitlePayment</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">checkTitleShopParameters</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">checkTitleStatistics</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-PrestaShop_Firefox" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for PrestaShop_Firefox</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_PrestaShop_Firefox');
+function tableData_PrestaShop_Firefox() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(38);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'choiceOfRandomGoods')
+data.setCell(0, 2, 'com.PrestaShop.test4.Ordering')
+data.setCell(0, 3, 23150);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'logOut')
+data.setCell(1, 2, 'com.PrestaShop.test3.CreatingANewProduct')
+data.setCell(1, 3, 21961);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'checkTitleAdvancedParameters')
+data.setCell(2, 2, 'com.PrestaShop.test1.Titles')
+data.setCell(2, 3, 18077);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'checkNewProduct')
+data.setCell(3, 2, 'com.PrestaShop.test3.CreatingANewProduct')
+data.setCell(3, 3, 11414);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'newProduct')
+data.setCell(4, 2, 'com.PrestaShop.test3.CreatingANewProduct')
+data.setCell(4, 3, 9393);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'addNewCategory')
+data.setCell(5, 2, 'com.PrestaShop.test2.AddNewCategory')
+data.setCell(5, 3, 7248);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'checkTitleModules')
+data.setCell(6, 2, 'com.PrestaShop.test1.Titles')
+data.setCell(6, 3, 7141);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'login')
+data.setCell(7, 2, 'com.PrestaShop.test1.LoginAndLogout')
+data.setCell(7, 3, 5575);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'checkTitleCatalog')
+data.setCell(8, 2, 'com.PrestaShop.test1.Titles')
+data.setCell(8, 3, 5540);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'checkTitleDelivery')
+data.setCell(9, 2, 'com.PrestaShop.test1.Titles')
+data.setCell(9, 3, 5533);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'signIn')
+data.setCell(10, 2, 'com.PrestaShop.test2.AddNewCategory')
+data.setCell(10, 3, 5482);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'checkTitleInternational')
+data.setCell(11, 2, 'com.PrestaShop.test1.Titles')
+data.setCell(11, 3, 5093);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'checkTitlePayment')
+data.setCell(12, 2, 'com.PrestaShop.test1.Titles')
+data.setCell(12, 3, 4224);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'checkTitleDesign')
+data.setCell(13, 2, 'com.PrestaShop.test1.Titles')
+data.setCell(13, 3, 4211);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'checkTitleDashboard')
+data.setCell(14, 2, 'com.PrestaShop.test1.Titles')
+data.setCell(14, 3, 4134);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'checkTitleShopParameters')
+data.setCell(15, 2, 'com.PrestaShop.test1.Titles')
+data.setCell(15, 3, 4111);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'logout')
+data.setCell(16, 2, 'com.PrestaShop.test1.LoginAndLogout')
+data.setCell(16, 3, 3816);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'productSection')
+data.setCell(17, 2, 'com.PrestaShop.test3.CreatingANewProduct')
+data.setCell(17, 3, 3655);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'checkTitleStatistics')
+data.setCell(18, 2, 'com.PrestaShop.test1.Titles')
+data.setCell(18, 3, 3549);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'checkTitleOrder')
+data.setCell(19, 2, 'com.PrestaShop.test1.Titles')
+data.setCell(19, 3, 3509);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'productActivation')
+data.setCell(20, 2, 'com.PrestaShop.test3.CreatingANewProduct')
+data.setCell(20, 3, 3333);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'checkTitleCustomerService')
+data.setCell(21, 2, 'com.PrestaShop.test1.Titles')
+data.setCell(21, 3, 3322);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'checkTitleCustomer')
+data.setCell(22, 2, 'com.PrestaShop.test1.Titles')
+data.setCell(22, 3, 3281);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'inputDeliveryAddressData')
+data.setCell(23, 2, 'com.PrestaShop.test4.Ordering')
+data.setCell(23, 3, 2556);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'checkingQuantityProduct')
+data.setCell(24, 2, 'com.PrestaShop.test4.Ordering')
+data.setCell(24, 3, 2398);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'logOut')
+data.setCell(25, 2, 'com.PrestaShop.test1.Titles')
+data.setCell(25, 3, 2257);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'paymentMethod')
+data.setCell(26, 2, 'com.PrestaShop.test4.Ordering')
+data.setCell(26, 3, 2239);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'signIn')
+data.setCell(27, 2, 'com.PrestaShop.test1.Titles')
+data.setCell(27, 3, 2231);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'signIn')
+data.setCell(28, 2, 'com.PrestaShop.test3.CreatingANewProduct')
+data.setCell(28, 3, 2188);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'categorySection')
+data.setCell(29, 2, 'com.PrestaShop.test2.AddNewCategory')
+data.setCell(29, 3, 1710);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'logOut')
+data.setCell(30, 2, 'com.PrestaShop.test2.AddNewCategory')
+data.setCell(30, 3, 1651);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'checkingNewCategory')
+data.setCell(31, 2, 'com.PrestaShop.test2.AddNewCategory')
+data.setCell(31, 3, 1637);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'addingProductToCart')
+data.setCell(32, 2, 'com.PrestaShop.test4.Ordering')
+data.setCell(32, 3, 1634);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'inputCustomerData')
+data.setCell(33, 2, 'com.PrestaShop.test4.Ordering')
+data.setCell(33, 3, 1430);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'deliveryMethod')
+data.setCell(34, 2, 'com.PrestaShop.test4.Ordering')
+data.setCell(34, 3, 1268);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'checkingPropertiesProduct')
+data.setCell(35, 2, 'com.PrestaShop.test4.Ordering')
+data.setCell(35, 3, 944);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'productProperties')
+data.setCell(36, 2, 'com.PrestaShop.test4.Ordering')
+data.setCell(36, 3, 413);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'checkingPropertiesOrder')
+data.setCell(37, 2, 'com.PrestaShop.test4.Ordering')
+data.setCell(37, 3, 195);
+window.suiteTableData['PrestaShop_Firefox']= { tableData: data, tableDiv: 'times-div-PrestaShop_Firefox'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-PrestaShop_Firefox">
+              </div> <!-- times-div-PrestaShop_Firefox -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-PrestaShop_Firefox" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for PrestaShop_Firefox</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-PrestaShop_Firefox" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-PrestaShop_Firefox" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.PrestaShop.test4.Ordering</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">setUp(Firefox, 1)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.PrestaShop.test1.LoginAndLogout</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">beforeTest(org.testng.TestRunner@48a0c8aa)</span>
+                <span class="method-start">8512 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">login(webinar.test@gmail.com, Xcg7299bnSmMuRLp9ITw)</span>
+                <span class="method-start">8593 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">logout</span>
+                <span class="method-start">14635 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">afterTest(org.testng.TestRunner@48a0c8aa)</span>
+                <span class="method-start">18463 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.PrestaShop.test1.Titles</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">beforeTest(org.testng.TestRunner@6192a5d5)</span>
+                <span class="method-start">18623 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">signIn(webinar.test@gmail.com, Xcg7299bnSmMuRLp9ITw)</span>
+                <span class="method-start">18628 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkTitleAdvancedParameters</span>
+                <span class="method-start">20895 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkTitleCatalog</span>
+                <span class="method-start">38981 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkTitleCustomer</span>
+                <span class="method-start">44531 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkTitleCustomerService</span>
+                <span class="method-start">47818 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkTitleDashboard</span>
+                <span class="method-start">51176 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkTitleDelivery</span>
+                <span class="method-start">55317 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkTitleDesign</span>
+                <span class="method-start">60872 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkTitleInternational</span>
+                <span class="method-start">65261 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkTitleModules</span>
+                <span class="method-start">70392 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkTitleOrder</span>
+                <span class="method-start">77786 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkTitlePayment</span>
+                <span class="method-start">81306 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkTitleShopParameters</span>
+                <span class="method-start">85542 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkTitleStatistics</span>
+                <span class="method-start">89660 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">logOut</span>
+                <span class="method-start">93225 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">afterTest(org.testng.TestRunner@6192a5d5)</span>
+                <span class="method-start">95488 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.PrestaShop.test2.AddNewCategory</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">beforeTest(org.testng.TestRunner@3722c145)</span>
+                <span class="method-start">95558 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">signIn(webinar.test@gmail.com, Xcg7299bnSmMuRLp9ITw)</span>
+                <span class="method-start">95561 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">categorySection</span>
+                <span class="method-start">101048 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addNewCategory</span>
+                <span class="method-start">102871 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkingNewCategory</span>
+                <span class="method-start">110186 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">logOut</span>
+                <span class="method-start">111854 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">afterTest(org.testng.TestRunner@3722c145)</span>
+                <span class="method-start">113509 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.PrestaShop.test3.CreatingANewProduct</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">beforeTest(org.testng.TestRunner@4cbc2e3b)</span>
+                <span class="method-start">113569 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">signIn(webinar.test@gmail.com, Xcg7299bnSmMuRLp9ITw)</span>
+                <span class="method-start">113571 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">productSection</span>
+                <span class="method-start">115765 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">newProduct</span>
+                <span class="method-start">119424 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">productActivation</span>
+                <span class="method-start">128821 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">logOut</span>
+                <span class="method-start">132157 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkNewProduct</span>
+                <span class="method-start">154210 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">afterTest(org.testng.TestRunner@4cbc2e3b)</span>
+                <span class="method-start">165645 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.PrestaShop.test4.Ordering</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">beforeTest(org.testng.TestRunner@2975a9e)</span>
+                <span class="method-start">165670 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">choiceOfRandomGoods</span>
+                <span class="method-start">165670 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">productProperties</span>
+                <span class="method-start">188842 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addingProductToCart</span>
+                <span class="method-start">189257 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkingPropertiesProduct</span>
+                <span class="method-start">190894 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">inputCustomerData(Dmitry, Tarasov, DmitryTarasov@gmail.com)</span>
+                <span class="method-start">191844 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">inputDeliveryAddressData(Tatarskaya 38, 04107, Kyiv)</span>
+                <span class="method-start">193278 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">deliveryMethod</span>
+                <span class="method-start">195836 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">paymentMethod</span>
+                <span class="method-start">197106 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkingPropertiesOrder</span>
+                <span class="method-start">199349 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkingQuantityProduct</span>
+                <span class="method-start">199545 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">afterTest(org.testng.TestRunner@2975a9e)</span>
+                <span class="method-start">201946 ms</span>
+              </div> <!-- configuration-test after -->
+              <div class="configuration-suite after">
+                <span class="method-name">afterSuite</span>
+                <span class="method-start">201959 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

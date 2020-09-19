@@ -1,0 +1,2 @@
+./selenoid.exe selenoid start --browsers 'firefox;chrome' --last-versions 2 --vnc --port 4445
+./selenoid-ui --selenoid-uri http://localhost:4445 --listen 0.0.0.0:8081 

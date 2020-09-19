@@ -1,0 +1,7 @@
+docker run -it --env Driver=http://localhost:4444/wd/hub/ -v /usr/src/Report_Allure/:/usr/src/PrestaShop/target/allure-report testshop:v1 mvn test site
+
+docker run -it --env Driver=http://172.17.0.2:4444/wd/hub -v /usr/src/Report_Allure/:/usr/src/PrestaShop/target/allure-report testshop:v1 mvn test site
+
+docker build -t testdocker:v1 .
+
+docker run -it --env Driver=http://172.17.0.2:4444/wd/hub -v /usr/src/Report_Allure/:/usr/src/Test_Docker/TestDocker/target/allure-report testdocker:v2 mvn --fail-at-end test site

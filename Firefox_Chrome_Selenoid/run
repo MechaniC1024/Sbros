@@ -1,0 +1,6 @@
+
+Selenoid
+docker run -d --net bridge --name selenoid -p 4444:4444 -v /var/run/docker.sock:/var/run/docker.sock -v $PWD:/etc/selenoid:ro aerokube/selenoid:latest --listen 0.0.0.0:4444 -service-startup-timeout 5m -session-attempt-timeout 5m -session-delete-timeout 5m -limit 10
+
+Selenoid-UI
+docker run -d --net bridge --name selenoid-ui -p 8090:8090 aerokube/selenoid-ui --selenoid-uri http://172.17.0.1:4444 --listen 0.0.0.0:8090

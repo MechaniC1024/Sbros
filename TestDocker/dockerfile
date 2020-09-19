@@ -1,0 +1,5 @@
+FROM maven:3.6.3-jdk-11
+RUN apt-get update
+RUN apt-get install git
+RUN git clone https://github.com/MechaniC1024/Test_Docker.git
+WORKDIR /Test_Docker/TestDocker

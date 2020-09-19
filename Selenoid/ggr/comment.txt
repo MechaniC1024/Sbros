@@ -1,0 +1,10 @@
+browser password
+
+docker run -d --name selenoid -p 4445:4445 -v //var/run/docker.sock:/var/run/docker.sock -v /f/Selenoid/ggr/:/etc/selenoid/:ro -v /f/Selenoid/ggr/logs/:/opt/selenoid/logs/ -v /f/Selenoid/ggr/video/:/opt/selenoid/video/ -e OVERRIDE_VIDEO_OUTPUT_DIR=/f/Selenoid/ggr/video/ aerokube/selenoid:latest-release -listen 0.0.0.0:4445 -limit 10 -log-output-dir /opt/selenoid/logs
+
+docker run -d --name ggr -p 5050:5050 -v /f/Selenoid/ggr:/etc/grid-router:ro -v /f/Selenoid/ggr/quota:/etc/grid-router/quota:ro aerokube/ggr:latest-release -listen 0.0.0.0:5050
+
+http://browser:password@localhost:5050/wd/hub
+
+docker run --name=selenium-grid-ggr-ui -d -p 8888:8888 -v /f/Selenoid/ggr/quota:/etc/grid-router/quota:ro aerokube/ggr-ui:latest-release --listen 0.0.0.0:8888
+docker run --name=selenium-grid-selenoid-ui -d --link selenium-grid-ggr-ui -p 8090:8090 aerokube/selenoid-ui --selenoid-uri http://selenium-grid-ggr-ui:8888 --listen 0.0.0.0:8090

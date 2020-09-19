@@ -1,0 +1,22 @@
+{
+    "android": {
+        "default": "10.0",
+        "versions": {
+            "10.0": {
+                "image": "selenoid/android:10.0",
+                "port": "4444",
+                "path": "/wd/hub"
+            }
+        }
+    },
+	    "chrome": {
+        "default": "mobile-79.0",
+        "versions": {
+            "mobile-79.0": {
+                "image": "selenoid/chrome-mobile:79.0",
+                "port": "4444",
+                "path": "/wd/hub"
+            }
+        }
+    }
+}

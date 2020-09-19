@@ -1,0 +1,26 @@
+test password
+http://test:password@localhost:4545/wd/hub
+
+docker run -d --name ggr -p 4545:4545 -v ${PWD}:/etc/grid-router:ro --net host aerokube/ggr:latest-release --listen 0.0.0.0:4545
+
+docker run --name selenium-grid-ggr-ui -d -p 8888:8888 -v /home/kali/Desktop/selenoid/ggr/quota/:/etc/grid-router/quota:ro --net host aerokube/ggr-ui:latest-release --listen 0.0.0.0:8888
+
+docker run --name selenium-grid-selenoid-ui -d --link selenium-grid-ggr-ui -p 8100:8100 --net host aerokube/selenoid-ui --selenoid-uri=http://selenium-grid-ggr-ui:8888 --listen 0.0.0.0:8100
+
+docker run --name selenium-grid-selenoid-ui -d -p 8100:8100 aerokube/selenoid-ui --selenoid-uri=http://localhost:8888 --listen 0.0.0.0:8100
+
+docker run --name selenium-grid-selenoid-ui -d -p 8100:8100 --net=host aerokube/selenoid-ui --status-uri=http://localhost:8888 --webdriver-uri=http://localhost:4545 --listen 0.0.0.0:8100
+
+
+
+docker run -d --name selenoid -p 4444:4444 -v //var/run/docker.sock:/var/run/docker.sock -v ${PWD}:/etc/selenoid:ro aerokube/selenoid:latest-release -limit 10 -service-startup-timeout 5m -session-attempt-timeout 5m -session-delete-timeout 5m
+docker run -d --name selenoid-ui --link selenoid -p 8090:8090 aerokube/selenoid-ui --selenoid-uri=http://192.168.1.102:4444 --listen 0.0.0.0:8090
+
+curl -s http://test:password@localhost:4545/quota
+
+
+
+
+
+docker run -d --name chrome -p 4000:4000 -v /var/run/docker.sock:/var/run/docker.sock selenoid/chrome:80.0
+

@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="38" passed="38" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-05-11T23:53:27 MSK" name="PrestaShop_Firefox" finished-at="2020-05-11T23:56:41 MSK" duration-ms="193465">
+    <groups>
+      <group name="title">
+        <method signature="Titles.checkTitleAdvancedParameters()[pri:0, instance:com.PrestaShop.test1.Titles@715b886f]" name="checkTitleAdvancedParameters" class="com.PrestaShop.test1.Titles"/>
+        <method signature="Titles.checkTitleCatalog()[pri:0, instance:com.PrestaShop.test1.Titles@715b886f]" name="checkTitleCatalog" class="com.PrestaShop.test1.Titles"/>
+        <method signature="Titles.checkTitleCustomer()[pri:0, instance:com.PrestaShop.test1.Titles@715b886f]" name="checkTitleCustomer" class="com.PrestaShop.test1.Titles"/>
+        <method signature="Titles.checkTitleCustomerService()[pri:0, instance:com.PrestaShop.test1.Titles@715b886f]" name="checkTitleCustomerService" class="com.PrestaShop.test1.Titles"/>
+        <method signature="Titles.checkTitleDashboard()[pri:0, instance:com.PrestaShop.test1.Titles@715b886f]" name="checkTitleDashboard" class="com.PrestaShop.test1.Titles"/>
+        <method signature="Titles.checkTitleDelivery()[pri:0, instance:com.PrestaShop.test1.Titles@715b886f]" name="checkTitleDelivery" class="com.PrestaShop.test1.Titles"/>
+        <method signature="Titles.checkTitleDesign()[pri:0, instance:com.PrestaShop.test1.Titles@715b886f]" name="checkTitleDesign" class="com.PrestaShop.test1.Titles"/>
+        <method signature="Titles.checkTitleInternational()[pri:0, instance:com.PrestaShop.test1.Titles@715b886f]" name="checkTitleInternational" class="com.PrestaShop.test1.Titles"/>
+        <method signature="Titles.checkTitleModules()[pri:0, instance:com.PrestaShop.test1.Titles@715b886f]" name="checkTitleModules" class="com.PrestaShop.test1.Titles"/>
+        <method signature="Titles.checkTitleOrder()[pri:0, instance:com.PrestaShop.test1.Titles@715b886f]" name="checkTitleOrder" class="com.PrestaShop.test1.Titles"/>
+        <method signature="Titles.checkTitlePayment()[pri:0, instance:com.PrestaShop.test1.Titles@715b886f]" name="checkTitlePayment" class="com.PrestaShop.test1.Titles"/>
+        <method signature="Titles.checkTitleShopParameters()[pri:0, instance:com.PrestaShop.test1.Titles@715b886f]" name="checkTitleShopParameters" class="com.PrestaShop.test1.Titles"/>
+        <method signature="Titles.checkTitleStatistics()[pri:0, instance:com.PrestaShop.test1.Titles@715b886f]" name="checkTitleStatistics" class="com.PrestaShop.test1.Titles"/>
+      </group> <!-- title -->
+    </groups>
+    <test started-at="2020-05-11T23:53:27 MSK" name="Check login and logout." finished-at="2020-05-11T23:53:37 MSK" duration-ms="9983">
+      <class name="com.PrestaShop.test1.LoginAndLogout">
+        <test-method is-config="true" signature="beforeTest(org.testng.ITestContext)[pri:0, instance:com.PrestaShop.test1.LoginAndLogout@5af8bb51]" started-at="2020-05-11T23:53:27 MSK" name="beforeTest" finished-at="2020-05-11T23:53:27 MSK" duration-ms="5" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@48a0c8aa]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="login(java.lang.String, java.lang.String)[pri:0, instance:com.PrestaShop.test1.LoginAndLogout@5af8bb51]" started-at="2020-05-11T23:53:27 MSK" name="login" description="Вход в админ панель сайта." data-provider="getLoginAndPassword" finished-at="2020-05-11T23:53:33 MSK" duration-ms="5575" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[webinar.test@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Xcg7299bnSmMuRLp9ITw]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="logout()[pri:0, instance:com.PrestaShop.test1.LoginAndLogout@5af8bb51]" started-at="2020-05-11T23:53:33 MSK" name="logout" description="Выход из админ панели сайта." finished-at="2020-05-11T23:53:37 MSK" depends-on-methods="com.PrestaShop.test1.LoginAndLogout.login" duration-ms="3816" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="afterTest(org.testng.ITestContext)[pri:0, instance:com.PrestaShop.test1.LoginAndLogout@5af8bb51]" started-at="2020-05-11T23:53:37 MSK" name="afterTest" finished-at="2020-05-11T23:53:37 MSK" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@48a0c8aa]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.PrestaShop.test1.LoginAndLogout -->
+    </test> <!-- Check login and logout. -->
+    <test started-at="2020-05-11T23:53:37 MSK" name="Check titles." finished-at="2020-05-11T23:54:54 MSK" duration-ms="76873">
+      <class name="com.PrestaShop.test1.Titles">
+        <test-method is-config="true" signature="beforeTest(org.testng.ITestContext)[pri:0, instance:com.PrestaShop.test1.Titles@715b886f]" started-at="2020-05-11T23:53:37 MSK" name="beforeTest" finished-at="2020-05-11T23:53:37 MSK" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@6192a5d5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="signIn(java.lang.String, java.lang.String)[pri:0, instance:com.PrestaShop.test1.Titles@715b886f]" started-at="2020-05-11T23:53:37 MSK" name="signIn" description="Вход в админ панель." data-provider="getLoginAndPassword" finished-at="2020-05-11T23:53:40 MSK" duration-ms="2231" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[webinar.test@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Xcg7299bnSmMuRLp9ITw]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signIn -->
+        <test-method signature="checkTitleAdvancedParameters()[pri:0, instance:com.PrestaShop.test1.Titles@715b886f]" started-at="2020-05-11T23:53:40 MSK" name="checkTitleAdvancedParameters" description="Проверка титула страницы на вкладке &quot;Конфигурация&quot; после обновления страницы." finished-at="2020-05-11T23:53:58 MSK" depends-on-methods="com.PrestaShop.test1.Titles.signIn" duration-ms="18077" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkTitleAdvancedParameters -->
+        <test-method signature="checkTitleCatalog()[pri:0, instance:com.PrestaShop.test1.Titles@715b886f]" started-at="2020-05-11T23:53:58 MSK" name="checkTitleCatalog" description="Проверка титула страницы на вкладке &quot;Каталог&quot; после обновления страницы." finished-at="2020-05-11T23:54:03 MSK" depends-on-methods="com.PrestaShop.test1.Titles.signIn" duration-ms="5540" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkTitleCatalog -->
+        <test-method signature="checkTitleCustomer()[pri:0, instance:com.PrestaShop.test1.Titles@715b886f]" started-at="2020-05-11T23:54:03 MSK" name="checkTitleCustomer" description="Проверка титула страницы на вкладке &quot;Клиенты&quot; после обновления страницы." finished-at="2020-05-11T23:54:07 MSK" depends-on-methods="com.PrestaShop.test1.Titles.signIn" duration-ms="3281" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkTitleCustomer -->
+        <test-method signature="checkTitleCustomerService()[pri:0, instance:com.PrestaShop.test1.Titles@715b886f]" started-at="2020-05-11T23:54:07 MSK" name="checkTitleCustomerService" description="Проверка титула страницы на вкладке &quot;Служба поддержки&quot; после обновления страницы." finished-at="2020-05-11T23:54:10 MSK" depends-on-methods="com.PrestaShop.test1.Titles.signIn" duration-ms="3322" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkTitleCustomerService -->
+        <test-method signature="checkTitleDashboard()[pri:0, instance:com.PrestaShop.test1.Titles@715b886f]" started-at="2020-05-11T23:54:10 MSK" name="checkTitleDashboard" description="Проверка титула страницы на вкладке &quot;Dashboard&quot; после обновления страницы." finished-at="2020-05-11T23:54:14 MSK" depends-on-methods="com.PrestaShop.test1.Titles.signIn" duration-ms="4134" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkTitleDashboard -->
+        <test-method signature="checkTitleDelivery()[pri:0, instance:com.PrestaShop.test1.Titles@715b886f]" started-at="2020-05-11T23:54:14 MSK" name="checkTitleDelivery" description="Проверка титула страницы на вкладке &quot;Delivery&quot; после обновления страницы." finished-at="2020-05-11T23:54:20 MSK" depends-on-methods="com.PrestaShop.test1.Titles.signIn" duration-ms="5533" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkTitleDelivery -->
+        <test-method signature="checkTitleDesign()[pri:0, instance:com.PrestaShop.test1.Titles@715b886f]" started-at="2020-05-11T23:54:20 MSK" name="checkTitleDesign" description="Проверка титула страницы на вкладке &quot;Design&quot; после обновления страницы." finished-at="2020-05-11T23:54:24 MSK" depends-on-methods="com.PrestaShop.test1.Titles.signIn" duration-ms="4211" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkTitleDesign -->
+        <test-method signature="checkTitleInternational()[pri:0, instance:com.PrestaShop.test1.Titles@715b886f]" started-at="2020-05-11T23:54:24 MSK" name="checkTitleInternational" description="Проверка титула страницы на вкладке &quot;International&quot; после обновления страницы." finished-at="2020-05-11T23:54:29 MSK" depends-on-methods="com.PrestaShop.test1.Titles.signIn" duration-ms="5093" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkTitleInternational -->
+        <test-method signature="checkTitleModules()[pri:0, instance:com.PrestaShop.test1.Titles@715b886f]" started-at="2020-05-11T23:54:29 MSK" name="checkTitleModules" description="Проверка титула страницы на вкладке &quot;Modules&quot; после обновления страницы." finished-at="2020-05-11T23:54:36 MSK" depends-on-methods="com.PrestaShop.test1.Titles.signIn" duration-ms="7141" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkTitleModules -->
+        <test-method signature="checkTitleOrder()[pri:0, instance:com.PrestaShop.test1.Titles@715b886f]" started-at="2020-05-11T23:54:37 MSK" name="checkTitleOrder" description="Проверка титула страницы на вкладке &quot;Заказы&quot; после обновления страницы." finished-at="2020-05-11T23:54:40 MSK" depends-on-methods="com.PrestaShop.test1.Titles.signIn" duration-ms="3509" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkTitleOrder -->
+        <test-method signature="checkTitlePayment()[pri:0, instance:com.PrestaShop.test1.Titles@715b886f]" started-at="2020-05-11T23:54:40 MSK" name="checkTitlePayment" description="Проверка титула страницы на вкладке &quot;Способ оплаты&quot; после обновления страницы." finished-at="2020-05-11T23:54:44 MSK" depends-on-methods="com.PrestaShop.test1.Titles.signIn" duration-ms="4224" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkTitlePayment -->
+        <test-method signature="checkTitleShopParameters()[pri:0, instance:com.PrestaShop.test1.Titles@715b886f]" started-at="2020-05-11T23:54:44 MSK" name="checkTitleShopParameters" description="Проверка титула страницы на вкладке &quot;Shop Parameters&quot; после обновления страницы." finished-at="2020-05-11T23:54:48 MSK" depends-on-methods="com.PrestaShop.test1.Titles.signIn" duration-ms="4111" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkTitleShopParameters -->
+        <test-method signature="checkTitleStatistics()[pri:0, instance:com.PrestaShop.test1.Titles@715b886f]" started-at="2020-05-11T23:54:48 MSK" name="checkTitleStatistics" description="Проверка титула страницы на вкладке &quot;Статистика&quot; после обновления страницы." finished-at="2020-05-11T23:54:52 MSK" depends-on-methods="com.PrestaShop.test1.Titles.signIn" duration-ms="3549" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkTitleStatistics -->
+        <test-method signature="logOut()[pri:0, instance:com.PrestaShop.test1.Titles@715b886f]" started-at="2020-05-11T23:54:52 MSK" name="logOut" description="Выход с аккаунта." depends-on-groups="title" finished-at="2020-05-11T23:54:54 MSK" depends-on-methods="com.PrestaShop.test1.Titles.signIn" duration-ms="2257" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOut -->
+        <test-method is-config="true" signature="afterTest(org.testng.ITestContext)[pri:0, instance:com.PrestaShop.test1.Titles@715b886f]" started-at="2020-05-11T23:54:54 MSK" name="afterTest" finished-at="2020-05-11T23:54:54 MSK" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@6192a5d5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.PrestaShop.test1.Titles -->
+    </test> <!-- Check titles. -->
+    <test started-at="2020-05-11T23:54:54 MSK" name="Сheck the addition of a new category." finished-at="2020-05-11T23:55:12 MSK" duration-ms="17967">
+      <class name="com.PrestaShop.test2.AddNewCategory">
+        <test-method is-config="true" signature="beforeTest(org.testng.ITestContext)[pri:0, instance:com.PrestaShop.test2.AddNewCategory@4f89331f]" started-at="2020-05-11T23:54:54 MSK" name="beforeTest" finished-at="2020-05-11T23:54:54 MSK" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@3722c145]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="signIn(java.lang.String, java.lang.String)[pri:0, instance:com.PrestaShop.test2.AddNewCategory@4f89331f]" started-at="2020-05-11T23:54:54 MSK" name="signIn" description="Вход в админ панель." data-provider="getLoginAndPassword" finished-at="2020-05-11T23:55:00 MSK" duration-ms="5482" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[webinar.test@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Xcg7299bnSmMuRLp9ITw]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signIn -->
+        <test-method signature="categorySection()[pri:0, instance:com.PrestaShop.test2.AddNewCategory@4f89331f]" started-at="2020-05-11T23:55:00 MSK" name="categorySection" description="Переход в раздел категории товаров." finished-at="2020-05-11T23:55:02 MSK" depends-on-methods="com.PrestaShop.test2.AddNewCategory.signIn" duration-ms="1710" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- categorySection -->
+        <test-method signature="addNewCategory()[pri:0, instance:com.PrestaShop.test2.AddNewCategory@4f89331f]" started-at="2020-05-11T23:55:02 MSK" name="addNewCategory" description="Добавление новой категории." finished-at="2020-05-11T23:55:09 MSK" depends-on-methods="com.PrestaShop.test2.AddNewCategory.categorySection" duration-ms="7248" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addNewCategory -->
+        <test-method signature="checkingNewCategory()[pri:0, instance:com.PrestaShop.test2.AddNewCategory@4f89331f]" started-at="2020-05-11T23:55:09 MSK" name="checkingNewCategory" description="Проверка созданной категории." finished-at="2020-05-11T23:55:11 MSK" depends-on-methods="com.PrestaShop.test2.AddNewCategory.addNewCategory" duration-ms="1637" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkingNewCategory -->
+        <test-method signature="logOut()[pri:0, instance:com.PrestaShop.test2.AddNewCategory@4f89331f]" started-at="2020-05-11T23:55:11 MSK" name="logOut" description="Выход с аккаунта." finished-at="2020-05-11T23:55:12 MSK" depends-on-methods="com.PrestaShop.test2.AddNewCategory.checkingNewCategory" duration-ms="1651" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOut -->
+        <test-method is-config="true" signature="afterTest(org.testng.ITestContext)[pri:0, instance:com.PrestaShop.test2.AddNewCategory@4f89331f]" started-at="2020-05-11T23:55:12 MSK" name="afterTest" finished-at="2020-05-11T23:55:12 MSK" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@3722c145]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.PrestaShop.test2.AddNewCategory -->
+    </test> <!-- Сheck the addition of a new category. -->
+    <test started-at="2020-05-11T23:55:12 MSK" name="Adding and checking a new product." finished-at="2020-05-11T23:56:04 MSK" duration-ms="52079">
+      <class name="com.PrestaShop.test3.CreatingANewProduct">
+        <test-method is-config="true" signature="beforeTest(org.testng.ITestContext)[pri:0, instance:com.PrestaShop.test3.CreatingANewProduct@2938127d]" started-at="2020-05-11T23:55:12 MSK" name="beforeTest" finished-at="2020-05-11T23:55:12 MSK" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@4cbc2e3b]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="signIn(java.lang.String, java.lang.String)[pri:0, instance:com.PrestaShop.test3.CreatingANewProduct@2938127d]" started-at="2020-05-11T23:55:12 MSK" name="signIn" description="Вход в админ панель сайта." data-provider="getLoginAndPassword" finished-at="2020-05-11T23:55:15 MSK" duration-ms="2188" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[webinar.test@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Xcg7299bnSmMuRLp9ITw]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signIn -->
+        <test-method signature="productSection()[pri:0, instance:com.PrestaShop.test3.CreatingANewProduct@2938127d]" started-at="2020-05-11T23:55:15 MSK" name="productSection" description="Переход в раздел товаров." finished-at="2020-05-11T23:55:18 MSK" depends-on-methods="com.PrestaShop.test3.CreatingANewProduct.signIn" duration-ms="3655" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- productSection -->
+        <test-method signature="newProduct()[pri:0, instance:com.PrestaShop.test3.CreatingANewProduct@2938127d]" started-at="2020-05-11T23:55:18 MSK" name="newProduct" description="Создание нового товара." finished-at="2020-05-11T23:55:28 MSK" depends-on-methods="com.PrestaShop.test3.CreatingANewProduct.productSection" duration-ms="9393" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newProduct -->
+        <test-method signature="productActivation()[pri:0, instance:com.PrestaShop.test3.CreatingANewProduct@2938127d]" started-at="2020-05-11T23:55:28 MSK" name="productActivation" description="Сохранение и активация нового товара." finished-at="2020-05-11T23:55:31 MSK" depends-on-methods="com.PrestaShop.test3.CreatingANewProduct.productSection" duration-ms="3333" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- productActivation -->
+        <test-method signature="logOut()[pri:0, instance:com.PrestaShop.test3.CreatingANewProduct@2938127d]" started-at="2020-05-11T23:55:31 MSK" name="logOut" description="Выход из админ панели сайта." finished-at="2020-05-11T23:55:53 MSK" depends-on-methods="com.PrestaShop.test3.CreatingANewProduct.productActivation" duration-ms="21961" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOut -->
+        <test-method signature="checkNewProduct()[pri:0, instance:com.PrestaShop.test3.CreatingANewProduct@2938127d]" started-at="2020-05-11T23:55:53 MSK" name="checkNewProduct" description="Проверка созданного товара." finished-at="2020-05-11T23:56:04 MSK" depends-on-methods="com.PrestaShop.test3.CreatingANewProduct.logOut" duration-ms="11414" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkNewProduct -->
+        <test-method is-config="true" signature="afterTest(org.testng.ITestContext)[pri:0, instance:com.PrestaShop.test3.CreatingANewProduct@2938127d]" started-at="2020-05-11T23:56:04 MSK" name="afterTest" finished-at="2020-05-11T23:56:04 MSK" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@4cbc2e3b]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.PrestaShop.test3.CreatingANewProduct -->
+    </test> <!-- Adding and checking a new product. -->
+    <test started-at="2020-05-11T23:56:04 MSK" name="Ordering." finished-at="2020-05-11T23:56:41 MSK" duration-ms="36276">
+      <class name="com.PrestaShop.test4.Ordering">
+        <test-method is-config="true" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.PrestaShop.test4.Ordering@6cf0a747]" started-at="2020-05-11T23:53:19 MSK" name="setUp" description="Инициализация браузера." finished-at="2020-05-11T23:53:27 MSK" duration-ms="8472" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="beforeTest(org.testng.ITestContext)[pri:0, instance:com.PrestaShop.test4.Ordering@6cf0a747]" started-at="2020-05-11T23:56:04 MSK" name="beforeTest" finished-at="2020-05-11T23:56:04 MSK" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@2975a9e]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="choiceOfRandomGoods()[pri:0, instance:com.PrestaShop.test4.Ordering@6cf0a747]" started-at="2020-05-11T23:56:04 MSK" name="choiceOfRandomGoods" description="Выбор случайного товара." finished-at="2020-05-11T23:56:28 MSK" duration-ms="23150" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- choiceOfRandomGoods -->
+        <test-method signature="productProperties()[pri:0, instance:com.PrestaShop.test4.Ordering@6cf0a747]" started-at="2020-05-11T23:56:28 MSK" name="productProperties" description="Взятие свойств товара." finished-at="2020-05-11T23:56:28 MSK" depends-on-methods="com.PrestaShop.test4.Ordering.choiceOfRandomGoods" duration-ms="413" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- productProperties -->
+        <test-method signature="addingProductToCart()[pri:0, instance:com.PrestaShop.test4.Ordering@6cf0a747]" started-at="2020-05-11T23:56:28 MSK" name="addingProductToCart" description="Добавление товара в корзину." finished-at="2020-05-11T23:56:30 MSK" depends-on-methods="com.PrestaShop.test4.Ordering.productProperties" duration-ms="1634" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addingProductToCart -->
+        <test-method signature="checkingPropertiesProduct()[pri:0, instance:com.PrestaShop.test4.Ordering@6cf0a747]" started-at="2020-05-11T23:56:30 MSK" name="checkingPropertiesProduct" description="Проверка свойств продукта." finished-at="2020-05-11T23:56:31 MSK" depends-on-methods="com.PrestaShop.test4.Ordering.addingProductToCart" duration-ms="944" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkingPropertiesProduct -->
+        <test-method signature="inputCustomerData(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.PrestaShop.test4.Ordering@6cf0a747]" started-at="2020-05-11T23:56:31 MSK" name="inputCustomerData" description="Ввод личных данных заказчика." data-provider="getCustomerData" finished-at="2020-05-11T23:56:32 MSK" depends-on-methods="com.PrestaShop.test4.Ordering.checkingPropertiesProduct" duration-ms="1430" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Dmitry]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Tarasov]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[DmitryTarasov@gmail.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- inputCustomerData -->
+        <test-method signature="inputDeliveryAddressData(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.PrestaShop.test4.Ordering@6cf0a747]" started-at="2020-05-11T23:56:32 MSK" name="inputDeliveryAddressData" description="Ввод адресса доставки товара." data-provider="getCustomerAddress" finished-at="2020-05-11T23:56:35 MSK" depends-on-methods="com.PrestaShop.test4.Ordering.inputCustomerData" duration-ms="2556" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Tatarskaya 38]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[04107]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Kyiv]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- inputDeliveryAddressData -->
+        <test-method signature="deliveryMethod()[pri:0, instance:com.PrestaShop.test4.Ordering@6cf0a747]" started-at="2020-05-11T23:56:35 MSK" name="deliveryMethod" description="Доставка товара." finished-at="2020-05-11T23:56:36 MSK" depends-on-methods="com.PrestaShop.test4.Ordering.inputDeliveryAddressData" duration-ms="1268" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deliveryMethod -->
+        <test-method signature="paymentMethod()[pri:0, instance:com.PrestaShop.test4.Ordering@6cf0a747]" started-at="2020-05-11T23:56:36 MSK" name="paymentMethod" description="Оплата товара." finished-at="2020-05-11T23:56:38 MSK" depends-on-methods="com.PrestaShop.test4.Ordering.deliveryMethod" duration-ms="2239" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- paymentMethod -->
+        <test-method signature="checkingPropertiesOrder()[pri:0, instance:com.PrestaShop.test4.Ordering@6cf0a747]" started-at="2020-05-11T23:56:38 MSK" name="checkingPropertiesOrder" description="Проверка свойств товара в заказе." finished-at="2020-05-11T23:56:38 MSK" depends-on-methods="com.PrestaShop.test4.Ordering.paymentMethod" duration-ms="195" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkingPropertiesOrder -->
+        <test-method signature="checkingQuantityProduct()[pri:0, instance:com.PrestaShop.test4.Ordering@6cf0a747]" started-at="2020-05-11T23:56:38 MSK" name="checkingQuantityProduct" description="Проверка количества товара после заказа." finished-at="2020-05-11T23:56:41 MSK" depends-on-methods="com.PrestaShop.test4.Ordering.checkingPropertiesOrder" duration-ms="2398" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkingQuantityProduct -->
+        <test-method is-config="true" signature="afterTest(org.testng.ITestContext)[pri:0, instance:com.PrestaShop.test4.Ordering@6cf0a747]" started-at="2020-05-11T23:56:41 MSK" name="afterTest" finished-at="2020-05-11T23:56:41 MSK" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@2975a9e]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.PrestaShop.test4.Ordering@6cf0a747]" started-at="2020-05-11T23:56:41 MSK" name="afterSuite" finished-at="2020-05-11T23:56:43 MSK" duration-ms="2455" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- com.PrestaShop.test4.Ordering -->
+    </test> <!-- Ordering. -->
+  </suite> <!-- PrestaShop_Firefox -->
+</testng-results>

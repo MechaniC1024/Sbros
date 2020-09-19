@@ -1,0 +1,14 @@
+docker run -d --name selenoid -p 4444:4444 -v //var/run/docker.sock:/var/run/docker.sock -v ${current}/SelenoidConfig/:/etc/selenoid/:ro -v ${current}/logs/:/opt/selenoid/logs/ aerokube/selenoid:latest-release -limit 10 -log-output-dir /opt/selenoid/logs
+-v ${current}/video/:/opt/selenoid/video/ -e OVERRIDE_VIDEO_OUTPUT_DIR=${current}/video/
+
+
+$current = $PWD -replace "\\\\", "/" -replace "C", "c"
+${current}
+docker run -d --name selenoid -p 4444:4444 -v //var/run/docker.sock:/var/run/docker.sock -v ${current}/SelenoidConfig/:/etc/selenoid/:ro -v ${current}/logs/:/opt/selenoid/logs/ -v ${current}/video/:/opt/selenoid/video/ -e OVERRIDE_VIDEO_OUTPUT_DIR=${current}/video/ aerokube/selenoid:latest-release -limit 10 -log-output-dir /opt/selenoid/logs
+
+
+
+
+
+$id = docker ps -qf "name=selenoid$"
+$id = docker ps -qf "name=selenoid-ui$"

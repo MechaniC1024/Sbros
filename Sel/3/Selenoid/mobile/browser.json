@@ -1,0 +1,12 @@
+{
+    "chrome": {
+        "default": "mobile-79.0",
+        "versions": {
+            "mobile-79.0": {
+                "image": "selenoid/chrome-mobile:79.0",
+                "port": "4444",
+                "path": "/wd/hub"
+            }
+        }
+    }
+}
